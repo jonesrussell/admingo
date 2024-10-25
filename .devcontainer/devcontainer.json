@@ -1,5 +1,5 @@
 {
-	"name": "Admin Go",
+	"name": "Go Admin",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -38,8 +38,12 @@
 				"ms-azuretools.vscode-docker",
 				"jinliming2.vscode-go-template",
 				"GitHub.vscode-github-actions"
-			]
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
 		}
 	},
-	"forwardPorts": [9000]
+	"forwardPorts": [9000],
+	"remoteUser": "vscode"
 }
